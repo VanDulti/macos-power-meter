@@ -45,7 +45,7 @@ class PowerManager: ObservableObject {
     func startUpdating() {
         self.refreshData()
         if timer == nil {
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
                 self.refreshData()
             }
         }
