@@ -35,6 +35,8 @@ jobs:
           xcodebuild clean build analyze -scheme "$scheme" -"$filetype_parameter" "$file_to_build" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Archive App
+        env:
+          scheme: ${{ 'default' }}
         run: |
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_archive="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_archive="`ls -A | grep -i \\.xcodeproj\$`"; fi
