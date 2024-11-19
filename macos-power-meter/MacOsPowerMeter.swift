@@ -2,7 +2,7 @@ import SwiftUI
 import Foundation
 
 @main
-struct macos_power_meterApp: App {
+struct MacOsPowerMeter: App {
     @StateObject private var powerManager = PowerManager()
     
     // Hide Dock Icon and Prevent Main App Window
