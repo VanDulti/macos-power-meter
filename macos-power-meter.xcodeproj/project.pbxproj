@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1BEE30352CECD2AB0004171A /* macos_power_meterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */; };
-		1BEE30372CECD2AB0004171A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30362CECD2AB0004171A /* ContentView.swift */; };
 		1BEE30392CECD2AC0004171A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE30382CECD2AC0004171A /* Assets.xcassets */; };
 		1BEE303C2CECD2AC0004171A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */; };
-		1BEE30472CECD2AC0004171A /* macos_power_meterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */; };
-		1BEE30512CECD2AC0004171A /* macos_power_meterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */; };
-		1BEE30532CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */; };
+		1BEE30602CECF6E70004171A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE305F2CECF6E70004171A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +33,12 @@
 /* Begin PBXFileReference section */
 		1BEE30312CECD2AB0004171A /* macos-power-meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-power-meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterApp.swift; sourceTree = "<group>"; };
-		1BEE30362CECD2AB0004171A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BEE30382CECD2AC0004171A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BEE303D2CECD2AC0004171A /* macos_power_meter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macos_power_meter.entitlements; sourceTree = "<group>"; };
 		1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterTests.swift; sourceTree = "<group>"; };
 		1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterUITests.swift; sourceTree = "<group>"; };
-		1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1BEE305F2CECF6E70004171A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +69,8 @@
 		1BEE30282CECD2AB0004171A = {
 			isa = PBXGroup;
 			children = (
+				1BEE305F2CECF6E70004171A /* .gitignore */,
 				1BEE30332CECD2AB0004171A /* macos-power-meter */,
-				1BEE30452CECD2AC0004171A /* macos-power-meterTests */,
-				1BEE304F2CECD2AC0004171A /* macos-power-meterUITests */,
 				1BEE30322CECD2AB0004171A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */,
-				1BEE30362CECD2AB0004171A /* ContentView.swift */,
 				1BEE30382CECD2AC0004171A /* Assets.xcassets */,
 				1BEE303D2CECD2AC0004171A /* macos_power_meter.entitlements */,
 				1BEE303A2CECD2AC0004171A /* Preview Content */,
@@ -110,23 +102,6 @@
 				1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1BEE30452CECD2AC0004171A /* macos-power-meterTests */ = {
-			isa = PBXGroup;
-			children = (
-				1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */,
-			);
-			path = "macos-power-meterTests";
-			sourceTree = "<group>";
-		};
-		1BEE304F2CECD2AC0004171A /* macos-power-meterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */,
-				1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */,
-			);
-			path = "macos-power-meterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BEE303C2CECD2AC0004171A /* Preview Assets.xcassets in Resources */,
+				1BEE30602CECF6E70004171A /* .gitignore in Resources */,
 				1BEE30392CECD2AC0004171A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEE30372CECD2AB0004171A /* ContentView.swift in Sources */,
 				1BEE30352CECD2AB0004171A /* macos_power_meterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEE30472CECD2AC0004171A /* macos_power_meterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEE30532CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift in Sources */,
-				1BEE30512CECD2AC0004171A /* macos_power_meterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
