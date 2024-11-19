@@ -35,7 +35,7 @@ jobs:
           xcodebuild clean build analyze \
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_build" \
-            -destination "platform=macOS,name=Any Mac"  
+            -destination "platform=macOS,name=Any Mac" \
             ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
             ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
 
@@ -50,7 +50,7 @@ jobs:
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_archive" \
             -archivePath "./build/$scheme.xcarchive" \
-            -destination "platform=macOS,name=Any Mac"  
+            -destination "platform=macOS,name=Any Mac" \
             ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
             ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
 
@@ -59,7 +59,7 @@ jobs:
           xcodebuild -exportArchive \
             -archivePath "./build/$(cat default).xcarchive" \
             -exportPath "./build" \
-            -exportOptionsPlist ExportOptions.plist 
+            -exportOptionsPlist ExportOptions.plist \
             ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
             ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
           mv "./build/$(cat default).app" "./build/macos-power-meter.app"
