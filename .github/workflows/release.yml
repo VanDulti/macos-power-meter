@@ -1,0 +1,74 @@
+name: Xcode - Build, Analyze, and Release
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  release:
+    types: [created]
+
+jobs:
+  build:
+    name: Build, Analyze, and Package macOS App
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Set Default Scheme
+        run: |
+          scheme_list=$(xcodebuild -list -json | tr -d "\n")
+          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
+          echo $default | cat >default
+          echo Using default scheme: $default
+
+      - name: Build and Analyze
+        env:
+          scheme: ${{ 'default' }}
+        run: |
+          if [ $scheme = default ]; then scheme=$(cat default); fi
+          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
+          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
+          xcodebuild clean build analyze \
+            -scheme "$scheme" \
+            -"$filetype_parameter" "$file_to_build" \
+            -destination "platform=macOS,arch=arm64" | xcpretty && exit ${PIPESTATUS[0]}
+
+      - name: Archive App
+        env:
+          scheme: ${{ 'default' }}
+        run: |
+          if [ $scheme = default ]; then scheme=$(cat default); fi
+          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_archive="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_archive="`ls -A | grep -i \\.xcodeproj\$`"; fi
+          file_to_archive=`echo $file_to_archive | awk '{$1=$1;print}'`
+          xcodebuild clean archive \
+            -scheme "$scheme" \
+            -"$filetype_parameter" "$file_to_archive" \
+            -archivePath "./build/$scheme.xcarchive" \
+            -destination "platform=macOS,arch=arm64" | xcpretty && exit ${PIPESTATUS[0]}
+
+      - name: Export .app
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath "./build/$(cat default).xcarchive" \
+            -exportPath "./build" \
+            -exportOptionsPlist ExportOptions.plist | xcpretty && exit ${PIPESTATUS[0]}
+          mv "./build/$(cat default).app" "./build/macos-power-meter.app"
+
+      - name: Archive .app as .zip
+        run: |
+          cd ./build
+          zip -r macos-power-meter.zip macos-power-meter.app
+        shell: bash
+      
+      - name: Upload .zip to GitHub Release
+        if: github.event_name == 'release'
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./build/macos-power-meter.zip
+          asset_name: macos-power-meter.zip
+          asset_content_type: application/zip
