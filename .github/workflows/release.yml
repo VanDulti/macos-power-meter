@@ -32,7 +32,10 @@ jobs:
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
           file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-          xcodebuild clean build analyze -scheme "$scheme" -"$filetype_parameter" "$file_to_build" | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild clean build analyze \
+            -scheme "$scheme" \
+            -"$filetype_parameter" "$file_to_build" \
+            -destination "platform=macOS,name=Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Archive App
         env:
@@ -41,7 +44,11 @@ jobs:
           if [ $scheme = default ]; then scheme=$(cat default); fi
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_archive="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_archive="`ls -A | grep -i \\.xcodeproj\$`"; fi
           file_to_archive=`echo $file_to_archive | awk '{$1=$1;print}'`
-          xcodebuild clean archive -scheme "$scheme" -"$filetype_parameter" "$file_to_archive" -archivePath "./build/$scheme.xcarchive" | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild clean archive \
+            -scheme "$scheme" \
+            -"$filetype_parameter" "$file_to_archive" \
+            -archivePath "./build/$scheme.xcarchive" \
+            -destination "platform=macOS,name=Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Export .app
         run: |
@@ -49,7 +56,7 @@ jobs:
             -archivePath "./build/$(cat default).xcarchive" \
             -exportPath "./build" \
             -exportOptionsPlist ExportOptions.plist | xcpretty && exit ${PIPESTATUS[0]}
-          mv "./build/$(cat default).app" "./build/App.app"
+          mv "./build/$(cat default).app" "./build/macos-power-meter.app"
 
       - name: Upload .app to GitHub Release
         if: github.event_name == 'release'
