@@ -35,9 +35,7 @@ jobs:
           xcodebuild clean build analyze \
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_build" \
-            -destination "platform=macOS,name=Any Mac" \
-            ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
-            ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
+            -destination "platform=macOS,arch=arm64" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Archive App
         env:
@@ -50,25 +48,27 @@ jobs:
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_archive" \
             -archivePath "./build/$scheme.xcarchive" \
-            -destination "platform=macOS,name=Any Mac" \
-            ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
-            ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
+            -destination "platform=macOS,arch=arm64" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Export .app
         run: |
           xcodebuild -exportArchive \
             -archivePath "./build/$(cat default).xcarchive" \
             -exportPath "./build" \
-            -exportOptionsPlist ExportOptions.plist \
-            ARCHS="arm64 x86_64" VALID_ARCHS="arm64 x86_64" \
-            ONLY_ACTIVE_ARCH=NO | xcpretty && exit ${PIPESTATUS[0]}
+            -exportOptionsPlist ExportOptions.plist | xcpretty && exit ${PIPESTATUS[0]}
           mv "./build/$(cat default).app" "./build/macos-power-meter.app"
 
-      - name: Upload .app to GitHub Release
+      - name: Archive .app as .zip
+        run: |
+          cd ./build
+          zip -r macos-power-meter.zip macos-power-meter.app
+        shell: bash
+      
+      - name: Upload .zip to GitHub Release
         if: github.event_name == 'release'
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./build/macos-power-meter.app
-          asset_name: macos-power-meter.app
-          asset_content_type: application/octet-stream
+          asset_path: ./build/macos-power-meter.zip
+          asset_name: macos-power-meter.zip
+          asset_content_type: application/zip
