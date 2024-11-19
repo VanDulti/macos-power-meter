@@ -13,50 +13,17 @@
 		1BEE30602CECF6E70004171A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE305F2CECF6E70004171A /* .gitignore */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1BEE30432CECD2AC0004171A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1BEE30292CECD2AB0004171A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BEE30302CECD2AB0004171A;
-			remoteInfo = "macos-power-meter";
-		};
-		1BEE304D2CECD2AC0004171A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1BEE30292CECD2AB0004171A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BEE30302CECD2AB0004171A;
-			remoteInfo = "macos-power-meter";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1BEE30312CECD2AB0004171A /* macos-power-meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-power-meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterApp.swift; sourceTree = "<group>"; };
 		1BEE30382CECD2AC0004171A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BEE303D2CECD2AC0004171A /* macos_power_meter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macos_power_meter.entitlements; sourceTree = "<group>"; };
-		1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEE305F2CECF6E70004171A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1BEE302E2CECD2AB0004171A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEE303F2CECD2AC0004171A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEE30492CECD2AC0004171A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				1BEE30312CECD2AB0004171A /* macos-power-meter.app */,
-				1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */,
-				1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,42 +89,6 @@
 			productReference = 1BEE30312CECD2AB0004171A /* macos-power-meter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1BEE30412CECD2AC0004171A /* macos-power-meterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEE30592CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterTests" */;
-			buildPhases = (
-				1BEE303E2CECD2AC0004171A /* Sources */,
-				1BEE303F2CECD2AC0004171A /* Frameworks */,
-				1BEE30402CECD2AC0004171A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BEE30442CECD2AC0004171A /* PBXTargetDependency */,
-			);
-			name = "macos-power-meterTests";
-			productName = "macos-power-meterTests";
-			productReference = 1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1BEE304B2CECD2AC0004171A /* macos-power-meterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEE305C2CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterUITests" */;
-			buildPhases = (
-				1BEE30482CECD2AC0004171A /* Sources */,
-				1BEE30492CECD2AC0004171A /* Frameworks */,
-				1BEE304A2CECD2AC0004171A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BEE304E2CECD2AC0004171A /* PBXTargetDependency */,
-			);
-			name = "macos-power-meterUITests";
-			productName = "macos-power-meterUITests";
-			productReference = 1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,14 +101,6 @@
 				TargetAttributes = {
 					1BEE30302CECD2AB0004171A = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					1BEE30412CECD2AC0004171A = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1BEE30302CECD2AB0004171A;
-					};
-					1BEE304B2CECD2AC0004171A = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1BEE30302CECD2AB0004171A;
 					};
 				};
 			};
@@ -197,8 +118,6 @@
 			projectRoot = "";
 			targets = (
 				1BEE30302CECD2AB0004171A /* macos-power-meter */,
-				1BEE30412CECD2AC0004171A /* macos-power-meterTests */,
-				1BEE304B2CECD2AC0004171A /* macos-power-meterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,20 +133,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BEE30402CECD2AC0004171A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEE304A2CECD2AC0004171A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,34 +144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BEE303E2CECD2AC0004171A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BEE30482CECD2AC0004171A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1BEE30442CECD2AC0004171A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BEE30302CECD2AB0004171A /* macos-power-meter */;
-			targetProxy = 1BEE30432CECD2AC0004171A /* PBXContainerItemProxy */;
-		};
-		1BEE304E2CECD2AC0004171A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BEE30302CECD2AB0004171A /* macos-power-meter */;
-			targetProxy = 1BEE304D2CECD2AC0004171A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1BEE30542CECD2AC0004171A /* Debug */ = {
@@ -393,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macos-power-meter/macos_power_meter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -420,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macos-power-meter/macos_power_meter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -441,78 +321,6 @@
 			};
 			name = Release;
 		};
-		1BEE305A2CECD2AC0004171A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YHTLS7XU9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-power-meter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macos-power-meter";
-			};
-			name = Debug;
-		};
-		1BEE305B2CECD2AC0004171A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YHTLS7XU9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-power-meter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macos-power-meter";
-			};
-			name = Release;
-		};
-		1BEE305D2CECD2AC0004171A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YHTLS7XU9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "macos-power-meter";
-			};
-			name = Debug;
-		};
-		1BEE305E2CECD2AC0004171A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YHTLS7XU9Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "macos-power-meter";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,24 +338,6 @@
 			buildConfigurations = (
 				1BEE30572CECD2AC0004171A /* Debug */,
 				1BEE30582CECD2AC0004171A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BEE30592CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BEE305A2CECD2AC0004171A /* Debug */,
-				1BEE305B2CECD2AC0004171A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BEE305C2CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BEE305D2CECD2AC0004171A /* Debug */,
-				1BEE305E2CECD2AC0004171A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -34,6 +34,8 @@ class PowerManager: ObservableObject {
     @Published var systemLoad: Double?
     @Published var batteryPower: Double?
     
+    final let interval = Double.pi * 2
+    
     private var timer: Timer?
     
     init() {
