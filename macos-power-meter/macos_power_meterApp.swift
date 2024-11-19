@@ -16,7 +16,7 @@ struct macos_power_meterApp: App {
         MenuBarExtra("\(printDouble(value: powerManager.systemLoad))w") {
             Text("System Load: \(printDouble(value: powerManager.systemLoad))w")
             Text("Adapter Usage: \(printDouble(value: powerManager.systemPowerIn))w")
-            Text("Battery Power: \(printDouble(value: powerManager.batteryPower))w")
+            Text("Battery Output: \(printDouble(value: powerManager.batteryPower))w")
             Button("Quit") {
                 NSApplication.shared.terminate(nil)
             }
@@ -30,11 +30,11 @@ struct macos_power_meterApp: App {
 }
 
 class PowerManager: ObservableObject {
-    @Published var systemPowerIn: Double?
     @Published var systemLoad: Double?
+    @Published var systemPowerIn: Double? // ~ adapter usage
     @Published var batteryPower: Double?
     
-    final let interval = Double.pi * 2
+    let interval = Double.pi * 2
     
     private var timer: Timer?
     
@@ -50,21 +50,21 @@ class PowerManager: ObservableObject {
             }
         }
     }
-
+    
     func stopUpdating() {
         timer?.invalidate()
         timer = nil
     }
-
+    
     func refreshData() {
         let service = IOServiceGetMatchingService(kIOMainPortDefault, IOServiceNameMatching("AppleSmartBattery"))
         defer { IOObjectRelease(service) }
         
         if let telemetryData = IORegistryEntryCreateCFProperty(service, "PowerTelemetryData" as CFString, nil, 0)?.takeRetainedValue() as? [String: Any] {
             DispatchQueue.main.async {
-                self.systemPowerIn = telemetryData["SystemPowerIn"] as? Double
                 self.systemLoad = telemetryData["SystemLoad"] as? Double
-                self.batteryPower = telemetryData["BatteryPower"] as? Double
+                self.systemPowerIn = telemetryData["SystemPowerIn"] as? Double
+                self.batteryPower = (self.systemLoad ?? 0.0) - (self.systemPowerIn ?? 0.0)
             }
         }
     }
