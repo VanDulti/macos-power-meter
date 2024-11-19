@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BEE30352CECD2AB0004171A /* macos_power_meterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */; };
+		1BEE30372CECD2AB0004171A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30362CECD2AB0004171A /* ContentView.swift */; };
+		1BEE30392CECD2AC0004171A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE30382CECD2AC0004171A /* Assets.xcassets */; };
+		1BEE303C2CECD2AC0004171A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */; };
+		1BEE30472CECD2AC0004171A /* macos_power_meterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */; };
+		1BEE30512CECD2AC0004171A /* macos_power_meterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */; };
+		1BEE30532CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BEE30432CECD2AC0004171A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BEE30292CECD2AB0004171A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BEE30302CECD2AB0004171A;
+			remoteInfo = "macos-power-meter";
+		};
+		1BEE304D2CECD2AC0004171A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BEE30292CECD2AB0004171A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BEE30302CECD2AB0004171A;
+			remoteInfo = "macos-power-meter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BEE30312CECD2AB0004171A /* macos-power-meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-power-meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterApp.swift; sourceTree = "<group>"; };
+		1BEE30362CECD2AB0004171A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1BEE30382CECD2AC0004171A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BEE303D2CECD2AC0004171A /* macos_power_meter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macos_power_meter.entitlements; sourceTree = "<group>"; };
+		1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterTests.swift; sourceTree = "<group>"; };
+		1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-power-meterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterUITests.swift; sourceTree = "<group>"; };
+		1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macos_power_meterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BEE302E2CECD2AB0004171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE303F2CECD2AC0004171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE30492CECD2AC0004171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BEE30282CECD2AB0004171A = {
+			isa = PBXGroup;
+			children = (
+				1BEE30332CECD2AB0004171A /* macos-power-meter */,
+				1BEE30452CECD2AC0004171A /* macos-power-meterTests */,
+				1BEE304F2CECD2AC0004171A /* macos-power-meterUITests */,
+				1BEE30322CECD2AB0004171A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BEE30322CECD2AB0004171A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE30312CECD2AB0004171A /* macos-power-meter.app */,
+				1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */,
+				1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BEE30332CECD2AB0004171A /* macos-power-meter */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE30342CECD2AB0004171A /* macos_power_meterApp.swift */,
+				1BEE30362CECD2AB0004171A /* ContentView.swift */,
+				1BEE30382CECD2AC0004171A /* Assets.xcassets */,
+				1BEE303D2CECD2AC0004171A /* macos_power_meter.entitlements */,
+				1BEE303A2CECD2AC0004171A /* Preview Content */,
+			);
+			path = "macos-power-meter";
+			sourceTree = "<group>";
+		};
+		1BEE303A2CECD2AC0004171A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE303B2CECD2AC0004171A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BEE30452CECD2AC0004171A /* macos-power-meterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE30462CECD2AC0004171A /* macos_power_meterTests.swift */,
+			);
+			path = "macos-power-meterTests";
+			sourceTree = "<group>";
+		};
+		1BEE304F2CECD2AC0004171A /* macos-power-meterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BEE30502CECD2AC0004171A /* macos_power_meterUITests.swift */,
+				1BEE30522CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift */,
+			);
+			path = "macos-power-meterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BEE30302CECD2AB0004171A /* macos-power-meter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEE30562CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meter" */;
+			buildPhases = (
+				1BEE302D2CECD2AB0004171A /* Sources */,
+				1BEE302E2CECD2AB0004171A /* Frameworks */,
+				1BEE302F2CECD2AB0004171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "macos-power-meter";
+			productName = "macos-power-meter";
+			productReference = 1BEE30312CECD2AB0004171A /* macos-power-meter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BEE30412CECD2AC0004171A /* macos-power-meterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEE30592CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterTests" */;
+			buildPhases = (
+				1BEE303E2CECD2AC0004171A /* Sources */,
+				1BEE303F2CECD2AC0004171A /* Frameworks */,
+				1BEE30402CECD2AC0004171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BEE30442CECD2AC0004171A /* PBXTargetDependency */,
+			);
+			name = "macos-power-meterTests";
+			productName = "macos-power-meterTests";
+			productReference = 1BEE30422CECD2AC0004171A /* macos-power-meterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BEE304B2CECD2AC0004171A /* macos-power-meterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEE305C2CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterUITests" */;
+			buildPhases = (
+				1BEE30482CECD2AC0004171A /* Sources */,
+				1BEE30492CECD2AC0004171A /* Frameworks */,
+				1BEE304A2CECD2AC0004171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BEE304E2CECD2AC0004171A /* PBXTargetDependency */,
+			);
+			name = "macos-power-meterUITests";
+			productName = "macos-power-meterUITests";
+			productReference = 1BEE304C2CECD2AC0004171A /* macos-power-meterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BEE30292CECD2AB0004171A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1BEE30302CECD2AB0004171A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1BEE30412CECD2AC0004171A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1BEE30302CECD2AB0004171A;
+					};
+					1BEE304B2CECD2AC0004171A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1BEE30302CECD2AB0004171A;
+					};
+				};
+			};
+			buildConfigurationList = 1BEE302C2CECD2AB0004171A /* Build configuration list for PBXProject "macos-power-meter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BEE30282CECD2AB0004171A;
+			productRefGroup = 1BEE30322CECD2AB0004171A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BEE30302CECD2AB0004171A /* macos-power-meter */,
+				1BEE30412CECD2AC0004171A /* macos-power-meterTests */,
+				1BEE304B2CECD2AC0004171A /* macos-power-meterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BEE302F2CECD2AB0004171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEE303C2CECD2AC0004171A /* Preview Assets.xcassets in Resources */,
+				1BEE30392CECD2AC0004171A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE30402CECD2AC0004171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE304A2CECD2AC0004171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BEE302D2CECD2AB0004171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEE30372CECD2AB0004171A /* ContentView.swift in Sources */,
+				1BEE30352CECD2AB0004171A /* macos_power_meterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE303E2CECD2AC0004171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEE30472CECD2AC0004171A /* macos_power_meterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE30482CECD2AC0004171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEE30532CECD2AC0004171A /* macos_power_meterUITestsLaunchTests.swift in Sources */,
+				1BEE30512CECD2AC0004171A /* macos_power_meterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BEE30442CECD2AC0004171A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BEE30302CECD2AB0004171A /* macos-power-meter */;
+			targetProxy = 1BEE30432CECD2AC0004171A /* PBXContainerItemProxy */;
+		};
+		1BEE304E2CECD2AC0004171A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BEE30302CECD2AB0004171A /* macos-power-meter */;
+			targetProxy = 1BEE304D2CECD2AC0004171A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BEE30542CECD2AC0004171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BEE30552CECD2AC0004171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1BEE30572CECD2AC0004171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macos-power-meter/macos_power_meter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"macos-power-meter/Preview Content\"";
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1BEE30582CECD2AC0004171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macos-power-meter/macos_power_meter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"macos-power-meter/Preview Content\"";
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1BEE305A2CECD2AC0004171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-power-meter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macos-power-meter";
+			};
+			name = Debug;
+		};
+		1BEE305B2CECD2AC0004171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-power-meter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macos-power-meter";
+			};
+			name = Release;
+		};
+		1BEE305D2CECD2AC0004171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "macos-power-meter";
+			};
+			name = Debug;
+		};
+		1BEE305E2CECD2AC0004171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YHTLS7XU9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ulrich-dultinger.macos-power-meterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "macos-power-meter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BEE302C2CECD2AB0004171A /* Build configuration list for PBXProject "macos-power-meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEE30542CECD2AC0004171A /* Debug */,
+				1BEE30552CECD2AC0004171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEE30562CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEE30572CECD2AC0004171A /* Debug */,
+				1BEE30582CECD2AC0004171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEE30592CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEE305A2CECD2AC0004171A /* Debug */,
+				1BEE305B2CECD2AC0004171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEE305C2CECD2AC0004171A /* Build configuration list for PBXNativeTarget "macos-power-meterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEE305D2CECD2AC0004171A /* Debug */,
+				1BEE305E2CECD2AC0004171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BEE30292CECD2AB0004171A /* Project object */;
+}
