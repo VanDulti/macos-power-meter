@@ -35,7 +35,7 @@ jobs:
           xcodebuild clean build analyze \
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_build" \
-            -destination "platform:macOS, name:Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
+            -destination "platform=macOS,name=Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Archive App
         env:
@@ -48,7 +48,7 @@ jobs:
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_archive" \
             -archivePath "./build/$scheme.xcarchive" \
-            -destination "platform:macOS, name:Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
+            -destination "platform=macOS,name=Any Mac" | xcpretty && exit ${PIPESTATUS[0]}
 
       - name: Export .app
         run: |
