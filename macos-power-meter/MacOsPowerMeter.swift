@@ -16,7 +16,7 @@ struct MacOsPowerMeter: App {
         MenuBarExtra("\(printDouble(value: powerManager.systemLoad))w") {
             Text("System Load: \(printDouble(value: powerManager.systemLoad))w")
             Text("Adapter Usage: \(printDouble(value: powerManager.systemPowerIn))w")
-            Text("Battery Output: \(printDouble(value: powerManager.batteryPower))w")
+            Text("Battery: \(printDouble(value: powerManager.batteryPower))w")
             Button("Quit") {
                 NSApplication.shared.terminate(nil)
             }
@@ -64,7 +64,7 @@ class PowerManager: ObservableObject {
             DispatchQueue.main.async {
                 self.systemLoad = telemetryData["SystemLoad"] as? Double
                 self.systemPowerIn = telemetryData["SystemPowerIn"] as? Double
-                self.batteryPower = (self.systemLoad ?? 0.0) - (self.systemPowerIn ?? 0.0)
+                self.batteryPower = (self.systemPowerIn ?? 0.0) - (self.systemLoad ?? 0.0)
             }
         }
     }
